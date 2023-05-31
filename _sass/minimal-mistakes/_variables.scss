@@ -18,6 +18,9 @@ $sans-serif: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
   "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
 $monospace: Monaco, Consolas, "Lucida Console", monospace !default;
 
+/***** system typefaces *****/
+$customfont: 'omyu_pretty';
+
 /* sans serif typefaces */
 $sans-serif-narrow: $sans-serif !default;
 $helvetica: Helvetica, "Helvetica Neue", Arial, sans-serif !default;
@@ -171,3 +174,6 @@ $navicon-width: 1.5rem !default;
 $navicon-height: 0.25rem !default;
 $global-transition: all 0.2s ease-in-out !default;
 $intro-transition: intro 0.3s both !default;
+
+
+
