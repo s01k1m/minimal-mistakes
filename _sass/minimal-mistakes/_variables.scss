@@ -12,14 +12,15 @@ $doc-font-size: 16 !default;
 $paragraph-indent: false !default; // true, false (default)
 $indent-var: 1.3em !default;
 
+/***** system typefaces *****/
+$custom-font: 'omyu_pretty';
+
 /* system typefaces */
 $serif: Georgia, Times, serif !default;
-$sans-serif: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+$sans-serif: $custom-font, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
   "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
 $monospace: Monaco, Consolas, "Lucida Console", monospace !default;
 
-/***** system typefaces *****/
-$customfont: 'omyu_pretty';
 
 /* sans serif typefaces */
 $sans-serif-narrow: $sans-serif !default;
