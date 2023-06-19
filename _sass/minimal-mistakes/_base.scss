@@ -126,6 +126,8 @@ blockquote {
 /* links */
 
 a {
+
+  
   &:focus {
     @extend %tab-focus;
   }
@@ -337,4 +339,55 @@ input[type="submit"],
 .archive__item-teaser {
   -webkit-transition: $global-transition;
   transition: $global-transition;
+}
+// 커스텀css 
+
+// link custm
+h2.archive__item-title a[rel="permalink"]::before {
+  /* 스타일을 적용할 CSS 속성 */
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+h2.archive__item-title a[rel="permalink"]:hover::before {
+  /* 스타일을 적용할 CSS 속성 */
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+h2.archive__item-title a[rel="permalink"]::before {
+  /* 스타일을 적용할 CSS 속성 */
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  
+  background: rgb(123,102,136);
+  background: linear-gradient(131deg, rgba(123,102,136,1) 0%, rgba(167,140,184,1) 50%, rgba(228,231,159,1) 79%, rgba(155,195,242,1) 94%);
+  
+  z-index: -1;
+  transition: transform .2s ease;
+
+}
+  
+
+h2.archive__item-title a[rel="permalink"] {
+  /* 스타일을 적용할 CSS 속성 */
+  position: relative;
+  padding: 3px;
+}
+
+h2.archive__item-title a[rel="permalink"]:hover {
+  /* 호버(Hover) 시 적용할 CSS 속성 */
+  color: white; /* 원하는 호버 시 글자 색상으로 변경하세요 */
+  text-decoration: none;
+
+}
+
+h2.archive__item-title {
+  text-underline-offset: 5px;
 }
