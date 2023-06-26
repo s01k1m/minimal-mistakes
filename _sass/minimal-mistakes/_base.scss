@@ -367,7 +367,8 @@ h2.archive__item-title a[rel="permalink"]::before {
   inset: 0 0 0 0;
   
   background: rgb(123,102,136);
-  background: linear-gradient(53deg, rgba(123,102,136,1) 0%, rgba(158,140,184,1) 50%, rgba(228,231,159,1) 79%, rgba(155,210,242,1) 94%);
+  background: background: rgb(123,102,136);
+  background: linear-gradient(119deg, rgba(123,102,136,0.8057901651651651) 0%, rgba(158,140,184,0.8658502252252253) 50%, rgba(228,231,159,0.8238081831831832) 69%, rgba(155,183,242,0.7667511261261262) 86%);
   
   z-index: -1;
   transition: transform .2s ease;
